@@ -4687,3 +4687,45 @@ input, select, textarea {
 		}
 
 	}
+
+	#about {
+		display: none;
+		padding: 50px 0;
+		max-width: 1200px; /* Add this rule to match the width of the Projects section */
+		margin: 0 auto; /* Add this rule to center the section horizontally */
+		box-sizing: border-box; /* Add this rule to include padding in the width calculation */
+	}
+	
+	#about .container {
+		color: #fff; /* Change the text color to white */
+		padding: 0 50px;
+		word-wrap: break-word; /* Add this rule to allow long text to wrap */
+		padding-bottom: 50px;
+	}
+	
+	#about h2, #about ul, #about li, #about h3 {
+		color: #fff; /* Change the text color to white */
+	}
+	#about h2 {
+		font-size: 50px; /* Change the font size of the h2 header to 36px */
+		margin-bottom: 50px;
+	}
+	
+	#about h3 {
+		font-size: 36px;  /* Change the font size of the h3 headers to 24px */
+		margin-bottom: 50px;
+	}
+
+	#about ul {
+		margin-bottom: 50px; /* Add margin-bottom to the ul elements */
+	}
+
+	#about p {
+		margin-bottom: 100px; /* Add margin-bottom to the p element */
+	}
+	
+	/* or */
+	
+	#about h3:first-of-type {
+		margin-top: 100px; /* Add margin-top to the first h3 element */
+	}

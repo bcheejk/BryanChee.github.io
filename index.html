@@ -31,7 +31,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Hello my name is Bryan, an aspiring data analyst. Explore my portfolio to learn more about my qualification and how I can help your team unlock the full potential of your data.
+						<a href="index.html" class="logo">Hello there, Welcome to my website
 						</a>
 					</header>
 
@@ -39,7 +39,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Projects</a></li>
-
+							<li><a href="#about">About Me</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/bryancheejk" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
@@ -51,7 +51,7 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
+							<article class="post featured" id="featured-post">
 								<header class="major">
 								
 									<h2><a href="https://github.com/bcheejk/TextAnalytics_BERTopic/blob/main/BERTopic_Modeling_GH.ipynb">Uncovering Insights from<br />
@@ -71,7 +71,7 @@
 							</article>
 
 						<!-- Posts -->
-							<section class="posts">
+							<section class="posts" id="posts">
 								<article>
 									<header>
 										<h2><a href="https://github.com/bcheejk/CIFAR10_Classification/blob/main/AML_Assignment2_GH.ipynb">Image Classification<br />
@@ -162,6 +162,75 @@
 							</section>
 					</div>
 
+					<div id="about">
+						<div class="container">
+							<h2>About Me</h2>
+							<p>Hi my name is Bryan, I'm an aspiring data analyst who recently completed my Masters in Business Analytics. Explore my portfolio to learn more about my qualification and how I can help your team unlock the full potential of your data.</p>
+							<h3>Education</h3>
+							<ul>
+							<li>2023-2024: Master of IT in Business (Fintech), Singapore Management University</li>
+							<li>2018-2021: Bachelor of Science with Honours in Economics, University of Nottingham</li>
+							</ul>
+							<h3>Work Experience</h3>
+							<ul>
+							<li>Jun 2023 - Dec 2023: Data Analyst Intern, Lenovo Singapore</li>
+							<ul>
+								<li>
+									<b><span style="color: white;">Data Visualisation</span></b>
+									<ul>
+										<li>
+											<b><span style="color: white;">PowerPoint Slides for Management Meetings</span></b>
+											<ul>
+												<li>Assisted manager in creating slides using Microsoft Power BI visuals and PowerPoint</li>
+												<li>Independently retrieved data, designed visuals, and prepared slides</li>
+											</ul>
+										</li>
+										<li>
+											<b><span style="color: white;">Power BI Dashboard Visualisations</span></b>
+											<ul>
+												<li>Developed and modified visualisations on 3 different dashboards used by Pricing Strategy team</li>
+												<li>Provided trends of pricing-related metrics for actionable strategies</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<b><span style="color: white;">Data Automation</span></b>
+									<ul>
+										<li>
+											<b><span style="color: white;">Automated Data Pre-processing Tasks on Lenovo Unified Data Platform (LUDP)</span></b>
+											<ul>
+												<li>Built new job pipelines using Python, SQL, and LUDP platform</li>
+												<li>Designed and tested job pipelines, including specifying code execution sequence, CPU and memory requirements, frequency, and time of execution</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<b><span style="color: white;">Data Analysis</span></b>
+									<ul>
+										<li>
+											<b><span style="color: white;">Ad-hoc Analyses for Product Segments and Locations</span></b>
+											<ul>
+												<li>Conducted analyses using Microsoft Power BI, Microsoft Excel, SQL and Python</li>
+												<li>Independently conducted analysis, interpreted results, and constructed storytelling narratives in a persuasive manner</li>
+											</ul>
+										</li>
+										<li>
+											<b><span style="color: white;">Pricing Comparative Analysis and Optimization</span></b>
+											<ul>
+												<li>Computed pricing comparisons for different products & geographical locations and identified opportunities for price optimization</li>
+												<li>Conceived the framework, conducted the analysis, and presented recommendations for pricing anaylst to make adjustments</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+							<li>Jan 2022 - Dec 2022: Personal Banker, OCBC Bank Malaysia</li>
+							</ul>
+						</div>
+					</div>
 				<!-- Footer -->
 					<footer id="footer">
 						</section>
@@ -205,6 +274,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				$('#nav a').on('click', function() {
+					var target = $(this).attr('href');
+					$('section, #featured-post, #about').hide();
+					$(target).show();
+				});
+			</script>
 	</body>
 </html>
